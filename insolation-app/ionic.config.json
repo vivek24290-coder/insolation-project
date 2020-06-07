@@ -1,0 +1,7 @@
+{
+  "name": "insolation-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
