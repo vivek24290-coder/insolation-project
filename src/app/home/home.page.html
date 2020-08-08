@@ -1,62 +1,39 @@
-<!-- <ion-header [translucent]="true">
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Welcome To Insolation</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div style="text-align: center;position:relative;">
+    <img src="assets/insolation_logo.jpg" width="304" height="250">
+  </div>
+  <div id="container">
+    <!-- <div id = "search">
+      <ion-item>
+        <ion-label position="floating">Search Jobs</ion-label>
+        <ion-input type="search"></ion-input>
+        <span>
+          <ion-icon name="search-outline"></ion-icon>
+        </span>
+      </ion-item>
+      
+    </div> -->
+    <ion-button color="light" [routerLink]="['/search']" size="medium">Search Jobs</ion-button>
+    <br />
+    <!-- <ion-searchbar placeholder = "Search Jobs"></ion-searchbar> -->
+    <ion-button color="light" [routerLink]="['/login']" size="medium">Login</ion-button>
+    <br />
+    <ion-button color="light" [routerLink]="['/signup']" size="medium">Sign Up</ion-button>
+    <br />
+  </div>
+
+</ion-content>
+
+<ion-footer>
   <ion-toolbar>
     <ion-title>
-      Blank
+      <h6><i>Copyright Insolation 2020</i></h6>
     </ion-title>
   </ion-toolbar>
-</ion-header> -->
-
-<!-- <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content> -->
-
-<ion-grid>
-  <ion-row>
-    <img src="assets/icon/img/iml.PNG" style="height: 170px;width: 180px;">
-  </ion-row>
-  <ion-row>
-    <p>Insolation Management Solutions LLP</p>
-  </ion-row>
-  <ion-row>
-    <p>Tagline</p>
-  </ion-row>
-
-  <ion-row>
-    <p>Marketing Slogan</p>
-  </ion-row>
-
-  <p><a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">Benefits</a></p>
-  <p><a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">Benefits</a></p>
-  <p><a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">Benefits</a></p>
-  <ion-row>
-    <!-- <ion-item [routerLink]="'/signup'"> -->
-      <ion-item button (click)="presentModal()">
-      <p>Sign Up (New User)</p>
-    </ion-item>
-  </ion-row>
-  <ion-content>
-    <ion-item [routerLink]="'/signin'">
-    <p>Sign In (Registered User)</p>
-  </ion-item>
-  </ion-content>
-  <ion-row>
-    <p>Skip Sign In</p>
-  </ion-row>
-
-</ion-grid>
-
-<!-- <div style="text-align: center;">
-<img src="assets/icon/img/iml.PNG" style="height: 170px;width: 180px;">
-</div> -->
-
-
-
+</ion-footer>

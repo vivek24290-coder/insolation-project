@@ -1,18 +1,26 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { InsLoginComponent } from './ins-login/ins-login.component';
+import { InsSignUpComponent } from './ins-sign-up/ins-sign-up.component';
+import { InsSearchjobsComponent } from './ins-searchjobs/ins-searchjobs.component';
 
 const routes: Routes = [
   {
+    // We are treating the home page as Login Page
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'signup',
-    loadChildren: () => import('./insolation-sign-up/insolation-sign-up.module').then( m => m.InsolationSignUpModule)
+    path: 'login',
+    component: InsLoginComponent
   },
   {
-    path: 'signin',
-    loadChildren: () => import('./insolation-sign-in/insolation-sign-in.module').then( m => m.InsolationSignInModule)
+    path: 'signup',
+    component: InsSignUpComponent
+  },
+  {
+    path: 'search',
+    component: InsSearchjobsComponent
   },
   {
     path: '',

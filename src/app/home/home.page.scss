@@ -6,6 +6,7 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  padding-top: 160px;
 }
 
 #container strong {
@@ -26,7 +27,11 @@
   text-decoration: none;
 }
 
-.my-custom-class .modal-wrapper {
-  background: #222;
+.ion-color-light{
+  text-transform: capitalize;
 }
 
+// .search {
+//   padding-left: 100px;
+//   padding-right: 100px;
+// }

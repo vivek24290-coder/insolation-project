@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { ModalController } from '@ionic/angular';
-import { InsolationSignUpComponent } from '../insolation-sign-up/insolation-sign-up.component';
 
 @Component({
   selector: 'app-home',
@@ -9,14 +7,6 @@ import { InsolationSignUpComponent } from '../insolation-sign-up/insolation-sign
 })
 export class HomePage {
 
-  constructor(public modalController: ModalController) {}
+  constructor() {}
 
-  async presentModal()
-  {
-    const modal = await this.modalController.create({
-      component: InsolationSignUpComponent,
-      cssClass: 'my-custom-class'
-    });
-    return (await modal).present();
-  }
 }
