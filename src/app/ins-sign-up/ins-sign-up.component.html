@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Sign Up</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button  mode="md"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div id="container">
+  <form [formGroup]="signUpForm">
+    <ion-item>
+      <ion-label position="floating">Full Name</ion-label>
+      <ion-input  formControlName = "name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Email Address</ion-label>
+      <ion-input  formControlName = "emailAddress"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input formControlName = "password"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">Confirm Password</ion-label>
+      <ion-input  formControlName = "confirmPassword"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Mobile Number</ion-label>
+      <ion-input  formControlName = "mobileNumber"></ion-input>
+    </ion-item>
+
+    
+    <ion-item>
+      <ion-label position="floating">Course</ion-label>
+      <ion-input  formControlName = "course"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Specialization</ion-label>
+      <ion-input  formControlName = "specialization"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Experience</ion-label>
+      <ion-input  formControlName = "experience"></ion-input>
+    </ion-item>    
+
+    <ion-button (click)="onSignUp()" expand="block">Sign Up</ion-button>
+  </form>
+</div>
+</ion-content>
