@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-insolation-sign-up',
+  selector: 'ins-sign-up',
   templateUrl: './insolation-sign-up.component.html',
   styleUrls: ['./insolation-sign-up.component.scss'],
 })

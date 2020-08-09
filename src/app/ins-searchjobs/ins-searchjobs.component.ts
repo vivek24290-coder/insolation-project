@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder,  FormControl } from '@angular/forms';
 
 @Component({
-  selector: 'app-ins-searchjobs',
+  selector: 'ins-searchjobs',
   templateUrl: './ins-searchjobs.component.html',
   styleUrls: ['./ins-searchjobs.component.scss'],
 })

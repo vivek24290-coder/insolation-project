@@ -25,7 +25,7 @@
     "component-selector": [
       true,
       "element",
-      "app",
+      "insolation",
       "kebab-case"
     ],
     "eofline": true,

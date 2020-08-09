@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder,  FormControl } from '@angular/forms';
 
 @Component({
-  selector: 'app-ins-sign-up',
+  selector: 'ins-sign-up',
   templateUrl: './ins-sign-up.component.html',
   styleUrls: ['./ins-sign-up.component.scss'],
 })

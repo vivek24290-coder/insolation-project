@@ -3,6 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { InsLoginComponent } from './ins-login/ins-login.component';
 import { InsSignUpComponent } from './ins-sign-up/ins-sign-up.component';
 import { InsSearchjobsComponent } from './ins-searchjobs/ins-searchjobs.component';
+import { InsBrowseJobsComponent } from './ins-browse-jobs/ins-browse-jobs.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'search',
     component: InsSearchjobsComponent
+  },
+  {
+    path: 'browse',
+    component: InsBrowseJobsComponent
   },
   {
     path: '',
