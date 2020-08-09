@@ -44,7 +44,7 @@
         <ion-input  formControlName = "specify"></ion-input>
       </ion-item>  
   
-      <ion-button (click)="onsSearch()" expand="block">SEARCH JOBS</ion-button>
+      <ion-button (click)="onsSearch()" [routerLink]="['/browse']" expand="block">SEARCH JOBS</ion-button>
     </form>
   </div>
   </ion-content>
