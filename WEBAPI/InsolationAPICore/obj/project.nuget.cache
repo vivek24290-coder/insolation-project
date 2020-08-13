@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "tNQPbV71K3bmVYbwBAcCWLAGPjvyHHgEjm34CEd1soMyHqokyyMuqUl0Hn1GhA+0TJ1OrmlQ0oROSYiB+2FVQg==",
+  "success": true,
+  "projectFilePath": "C:\\Personal\\insolation-project\\WEBAPI\\InsolationAPICore\\InsolationAPICore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\24219\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\24219\\.nuget\\packages\\microsoft.openapi\\1.1.4\\microsoft.openapi.1.1.4.nupkg.sha512",
+    "C:\\Users\\24219\\.nuget\\packages\\swashbuckle.aspnetcore\\5.5.0\\swashbuckle.aspnetcore.5.5.0.nupkg.sha512",
+    "C:\\Users\\24219\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.5.0\\swashbuckle.aspnetcore.swagger.5.5.0.nupkg.sha512",
+    "C:\\Users\\24219\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.5.0\\swashbuckle.aspnetcore.swaggergen.5.5.0.nupkg.sha512",
+    "C:\\Users\\24219\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.5.0\\swashbuckle.aspnetcore.swaggerui.5.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
