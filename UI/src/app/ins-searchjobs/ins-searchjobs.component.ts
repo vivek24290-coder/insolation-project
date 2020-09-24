@@ -10,6 +10,7 @@ import { GlobalService } from "../services/global.service";
 export class InsSearchjobsComponent implements OnInit {
   jobSearchForm: FormGroup;
   countriesList: any;
+  flagUrl: any;
   constructor(
     private _formBuilder: FormBuilder,
     private _globalService: GlobalService
@@ -28,10 +29,15 @@ export class InsSearchjobsComponent implements OnInit {
 
     this._globalService.getCountriesList().subscribe((country) => {
       if (country) {
-        console.log("COuntries List are: ", country);
         this.countriesList = country;
       }
     });
+  }
+
+  setflag(event: any)
+  {
+    console.log('Flag url is:', this.jobSearchForm.get('location').value);
+    this.flagUrl = this.jobSearchForm.get('location').value;
   }
 
   onsSearch() {}

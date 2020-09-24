@@ -31,10 +31,13 @@
       <ion-item>
         <ion-label position="floating">Country</ion-label>
         <!-- <ion-input  formControlName = "location"></ion-input> -->
-        <ion-select placeholder="Select One">
-          <ion-select-option *ngFor = "let country of countriesList" value="country.alpha2Code">{{country.name}}</ion-select-option>
+        <ion-select placeholder="Select One" formControlName = "location" (ionBlur) = setflag($event)>
+          <ion-select-option *ngFor = "let country of countriesList" value="{{country.flag}}" >
+            {{country.name}}
+          </ion-select-option>
           <!-- <ion-select-option value="m">Male</ion-select-option> -->
         </ion-select>
+        <span><img [src]="flagUrl" style="width: 20px;height: 20px;"></span>
       </ion-item>
 
       <ion-item>
