@@ -14,6 +14,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InsSearchjobsComponent } from './ins-searchjobs/ins-searchjobs.component';
 import { InsBrowseJobsComponent } from './ins-browse-jobs/ins-browse-jobs.component';
 import { InsJobListComponent } from './ins-browse-jobs/ins-job-list/ins-job-list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { GlobalService } from './services/global.service';
 
 
 @NgModule({
@@ -23,10 +25,12 @@ import { InsJobListComponent } from './ins-browse-jobs/ins-job-list/ins-job-list
     IonicModule.forRoot(),
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule],
+    ReactiveFormsModule,
+    HttpClientModule,],
   providers: [
     StatusBar,
     SplashScreen,
+    GlobalService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
