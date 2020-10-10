@@ -34,11 +34,5 @@ export class InsSearchjobsComponent implements OnInit {
     });
   }
 
-  setflag(event: any)
-  {
-    console.log('Flag url is:', this.jobSearchForm.get('location').value);
-    this.flagUrl = this.jobSearchForm.get('location').value;
-  }
-
   onsSearch() {}
 }
