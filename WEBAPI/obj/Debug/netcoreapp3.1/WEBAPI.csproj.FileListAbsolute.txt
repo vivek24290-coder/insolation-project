@@ -20,3 +20,9 @@ C:\Personal\insolation-project\WEBAPI\obj\Debug\netcoreapp3.1\WEBAPI.pdb
 C:\Personal\insolation-project\WEBAPI\obj\Debug\netcoreapp3.1\WEBAPI.genruntimeconfig.cache
 C:\Personal\insolation-project\WEBAPI\bin\Debug\netcoreapp3.1\MySqlConnector.dll
 C:\Personal\insolation-project\WEBAPI\obj\Debug\netcoreapp3.1\WEBAPI.csproj.CopyComplete
+C:\Personal\insolation-project\WEBAPI\bin\Debug\netcoreapp3.1\System.Web.Cors.dll
+C:\Personal\insolation-project\WEBAPI\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Personal\insolation-project\WEBAPI\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+C:\Personal\insolation-project\WEBAPI\bin\Debug\netcoreapp3.1\System.Web.Http.Cors.dll
+C:\Personal\insolation-project\WEBAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Personal\insolation-project\WEBAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll

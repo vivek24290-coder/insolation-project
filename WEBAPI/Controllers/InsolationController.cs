@@ -1,4 +1,5 @@
 using System.Threading.Tasks;
+using System.Web.Http.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InsolationAPI.Controllers
@@ -13,12 +14,22 @@ namespace InsolationAPI.Controllers
         }
 
         [HttpPost]
+
         public async Task<IActionResult> Post([FromBody] Insolation body)
         {
             await Db.Connection.OpenAsync();
             body.Db = Db;
             await body.InsertAsync();
             return new OkObjectResult(body);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetLatest()
+        {
+            await Db.Connection.OpenAsync();
+            var query = new UserQuery(Db);
+            var result = await query.FindAll();
+            return new OkObjectResult(result);
         }
     }
 

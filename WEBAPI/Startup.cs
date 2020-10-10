@@ -27,6 +27,12 @@ namespace WEBAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddCors(c =>
+                            {
+                                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin()
+                                                                            .AllowAnyHeader()
+                                                                            .AllowAnyMethod());
+                            });
             services.AddTransient<InsolationDb>(_ => new InsolationDb(Configuration["ConnectionStrings:DefaultConnection"]));
         }
 
@@ -37,6 +43,7 @@ namespace WEBAPI
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseCors("AllowOrigin");
 
             app.UseHttpsRedirection();
 
